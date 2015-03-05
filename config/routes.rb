@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
+  
+  root  "write_places#index"
   resources :write_places
-
   resources :users
 
   # The priority is based upon order of creation: first created -> highest priority.

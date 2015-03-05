@@ -1,0 +1,29 @@
+<h1>Listing write_places</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Date</th>
+      <th>Text</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @write_places.each do |write_place| %>
+      <tr>
+        <td><%= write_place.name %></td>
+        <td><%= write_place.date %></td>
+        <td><%= write_place.text %></td>
+        <td><%= link_to 'Show', write_place %></td>
+        <td><%= link_to 'Edit', edit_write_place_path(write_place) %></td>
+        <td><%= link_to 'Destroy', write_place, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Write place', new_write_place_path %>

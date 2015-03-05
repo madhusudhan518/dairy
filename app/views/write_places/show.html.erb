@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @write_place.name %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @write_place.date %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @write_place.text %>
+</p>
+
+<%= link_to 'Edit', edit_write_place_path(@write_place) %> |
+<%= link_to 'Back', write_places_path %>

@@ -1,0 +1,2 @@
+module WritePlacesHelper
+end
